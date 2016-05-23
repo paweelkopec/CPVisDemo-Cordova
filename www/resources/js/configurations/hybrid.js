@@ -1,8 +1,9 @@
 // override configuration for RESTful services
 var TicketMonster = {
     config:{
-        baseRESTUrl:"http://localhost:8080/CPVisDemoService/"//http://ticketmonster-jdf.rhcloud.com/
-    }
+        baseRESTUrl:"http://cpvisdemoservice-paweelk.rhcloud.com//"//http://ticketmonster-jdf.rhcloud.com/
+    }//http://cpvisdemoservice-paweelk.rhcloud.com/
+    //
 };
 
 require(['../../../cordova'], function() {
