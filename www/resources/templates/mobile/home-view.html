@@ -1,0 +1,19 @@
+<div data-role="header">
+    <h3>CPVis Demo</h3>
+</div>
+<div class="ui-content">
+<p>Aktualny Stan:  <span id="state-current-name"> <%=model.first().get('name')%></span> <br/>
+   <img style="max-width:200px;" id="state-current-image" src="<%=configuration.baseUrl%>/resources/gfx/<%=model.first().get('image')%>">
+</p>
+    <h4>Stany</h4>
+    
+    <ul data-role="listview">
+    
+         <%_.each(model.models, function (entity) { %>
+         <li>
+            <a href="#" class='state-target' data-id="<%=entity.get('id')%>"><%=entity.get('name')%></a>
+        </li>
+		 <% }); %>
+
+    </ul>
+</div>
